@@ -15,7 +15,7 @@
         <div class="form-group">
           <label for="inputItem">Question 1. What is the capital of Ghana</label>
           <input type="text" class="form-control"  name="" id="inputItem">
-          <div>
+          <div class="form-check"   id="q1"></div>
             <input type="radio"   id="qa1"   name="capital"  value="kumasi">kumasi
             <input type="radio"   id="qa2"   name="capital"  value="Ho">Ho
             <input type="radio"   id="qa3"   name="capital"  value="Accra">Accra
@@ -27,7 +27,7 @@
           <div class="container">
           <label for="inputItem">Question 2. Who created GIT?</label>
           <input type="text" class="form-control"  name="" id="inputItem">
-          <div>
+          <div class="form-check"  id="q2"></div>
             <input type="radio"   id="qg1"   name="git"  value="Nicolas">Nicolas
             <input type="radio"   id="qg2"   name="git"  value="Tovalds">Tovalds Linus
             <input type="radio"   id="qg3"   name="git"  value="Dennis">Dennis Ritchie
@@ -36,7 +36,7 @@
     </div>
 
         </div>
-        <button id="addbtn"  class="btn btn-info">Add list</button>
+        <button onclick="check()" id="addbtn"  class="btn btn-info">Check Answer</button>
         <button id="clearbtn"  class="btn btn-danger">Clear</button>
         <br>
 
@@ -44,7 +44,7 @@
         <ol id="mylist"></ol>
 
     </div>
-
-    <script type="" src="js/script.js"></script>
+     <ul id="answers"></ul>
+    <script type="" src="script.js"></script>
 </body>
 </html>
